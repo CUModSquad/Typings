@@ -29,6 +29,7 @@ declare module xmpp  {
     c(t:string, d:any):Element;
     t(message:string):Element;
     getChild(t:string):any;
+    getChildren(t:string):any;
     getText():string;
   }
 }
