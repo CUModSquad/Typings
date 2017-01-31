@@ -2,6 +2,8 @@
 // Project: https://github.com/milesj/aesthetic
 // Definitions by: JB (codecorsair) <https://github.com/codecorsair>
 
+import * as React from 'react';
+
 declare module 'aesthetic' {
   export default class Aesthetic {
     constructor(adapter: any, options?: Partial<AestheticOptions>);
@@ -19,4 +21,6 @@ declare module 'aesthetic' {
   export function classes(...params: (string | any)[]): string;
 
   export const ThemeProvider: any;
+
+  export const ClassNamesPropType: any;
 }
