@@ -2,8 +2,6 @@
 // Project: https://github.com/milesj/aesthetic
 // Definitions by: JB (codecorsair) <https://github.com/codecorsair>
 
-import * as React from 'react';
-
 declare module 'aesthetic' {
   export default class Aesthetic {
     constructor(adapter: any, options?: Partial<AestheticOptions>);
