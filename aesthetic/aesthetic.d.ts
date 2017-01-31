@@ -14,7 +14,7 @@ declare module 'aesthetic' {
     themePropName: string; // Name of the prop in which the theme name is passed to. Defaults to 'theme'.
   }
 
-  export function createStyler(aesthetic: Aesthetic): (style: any, options: Partial<AestheticOptions>) => (element: any) => any;
+  export function createStyler(aesthetic: Aesthetic): (style: any, options?: Partial<AestheticOptions>) => (element: any) => any;
 
   export function classes(...params: (string | any)[]): string;
 
