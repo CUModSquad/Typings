@@ -4,6 +4,12 @@
 
 declare module 'aesthetic-adapter-fela' {
   export default class FelaAdapter {
-    constructor();
+    constructor(renderer?: any);
+  }
+}
+
+declare module 'aesthetic-adapter-fela/unified' {
+  export default class FelaAdapter {
+    constructor(renderer?: any);
   }
 }
