@@ -7,7 +7,15 @@ declare module 'aesthetic' {
     constructor(adapter: any);
   }
 
-  export function createStyler(aesthetic: Aesthetic): (style: any, options: any) => (element: any) => any;
+
+
+  export function createStyler(aesthetic: Aesthetic): (style: any, 
+    options: Partial<{  
+      styleName: string; // The unique style name of the component. This name is primarily used in logging and caching. Defaults to the component or function name.
+      extendable: boolean; // Allows the component and its styles to be extended, creating a new component in the process. Defaults to false.
+      stylesPropName: string; // Name of the prop in which the compiled class names or styles object is passed to. Defaults to 'className'.
+      themePropName: string; // Name of the prop in which the theme name is passed to. Defaults to 'theme'.
+    }>) => (element: any) => any;
 
   export function classes(...params: (string | any)[]): string;
 
