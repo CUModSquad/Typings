@@ -1,5 +1,6 @@
 declare module 'react-animate.css' {
   export interface ReactAnimateProps {
+    className: string;
     animationEnter: string;
     animationLeave: string;
     durationEnter: number;
