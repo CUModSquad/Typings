@@ -1,11 +1,11 @@
 declare module 'react-pan-zoom-element' {
-    class PanZoomElement extends React.Component<PanZoomProps, any>{
+  export { PanZoomElement };
 
-    }
-    interface PanZoomProps {
-        width: number;
-        height: number;
-    }
+  class PanZoomElement extends React.Component<PanZoomProps, {}> {}
 
-    export default PanZoomElement;
+  export interface PanZoomProps {
+    width: number;
+    height: number;
+  }
 }
+
