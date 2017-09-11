@@ -3,8 +3,8 @@ declare module 'react-pan-zoom-element' {
 
     }
     interface PanZoomProps {
-        width: number,
-        height: number,
+        width: number;
+        height: number;
     }
 
     export default PanZoomElement;
