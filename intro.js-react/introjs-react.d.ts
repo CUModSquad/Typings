@@ -14,6 +14,7 @@ declare module 'intro.js-react' {
   export interface StepsProps {
     enabled?: boolean;
     initialStep: number;
+    steps: StepInfo[];
     onExit?: (index: number) => void;
     onStart?: (index: number) => void;
     onChange?: (nextIndex: number, nextElement: string) => void;
