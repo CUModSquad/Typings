@@ -8,4 +8,5 @@ declare module 'react-emotion' {
   function hydrate(ids: any[]): void;
   function flush(): void;
   type EmotionStyleProperty = string;
+  export default function styled(node: string): any;
 }
