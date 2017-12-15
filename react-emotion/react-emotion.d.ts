@@ -7,6 +7,7 @@ declare module 'react-emotion' {
   function merge(className: string, sourceMap: {[key: string]: any}): string;
   function hydrate(ids: any[]): void;
   function flush(): void;
+  function cx(...args): string;
   type EmotionStyleProperty = string;
   export default function styled(node: string): any;
 }
