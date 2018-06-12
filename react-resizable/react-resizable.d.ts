@@ -19,6 +19,10 @@ declare module 'react-resizable' {
     draggableOpts: Object
   }
 
-  class Resizable extends React.Component<Partial<ResizableProps>, {}> {}
-  class ResizableBox extends React.Component<Partial<ResizableProps>, {}> {}
+  class Resizable extends React.Component<Partial<ResizableProps>, {}> {
+    render(): JSX.Element;
+  }
+  class ResizableBox extends React.Component<Partial<ResizableProps>, {}> {
+    render(): JSX.Element;
+  }
 }
