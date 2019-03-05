@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CUModSquad/Typings#readme",
   "devDependencies": {
-    "@types/react": "^15.0.5"
+    "@types/react": "^15.0.5",
+    "@types/velocity-animate": "^1.2.33"
   }
 }
