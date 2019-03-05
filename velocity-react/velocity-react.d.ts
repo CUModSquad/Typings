@@ -7,7 +7,7 @@ declare module 'velocity-react' {
     targetQuerySelector?: string; // default null
     interruptBehavior?: string; // default 'stop'
   } & Partial<jquery.velocity.Options>;
-  export type VelocityComponent = React.Component<VelocityComponentProps, {}>;
+  export class VelocityComponent extends React.Component<VelocityComponentProps, {}> {}
 
   export type VelocityTransitionGroupProps = {
     runOnMount?: boolean;
@@ -17,7 +17,7 @@ declare module 'velocity-react' {
     enterHideStyle?: object;
     enterShowStyle?: object;
   }
-  export type VelocityTransitionGroup = React.Component<VelocityTransitionGroupProps, {}>;
+  export class VelocityTransitionGroup extends React.Component<VelocityTransitionGroupProps, {}> {}
 
 
 }
